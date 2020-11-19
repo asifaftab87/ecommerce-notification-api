@@ -16,7 +16,7 @@ public class MailAttachmentDTO  implements Serializable {
 	
 	public MailAttachmentDTO() {}
 	
-	public MailAttachmentDTO(String fileName, byte[] file, String mimeType) {
+	public MailAttachmentDTO(byte[] file, String mimeType, String fileName) {
 		this.fileName=fileName;
 		this.file=file;
 		this.mimeType = mimeType;

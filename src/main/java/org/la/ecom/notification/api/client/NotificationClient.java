@@ -22,8 +22,6 @@ public class NotificationClient {
 	
 	public <T> T getForObject(String url, Class<T> responseType) throws RestClientException {
 		
-		System.out.println("asif here");
-		
 		return restTemplate.getForObject(this.url+url, responseType);
 	}
 	
